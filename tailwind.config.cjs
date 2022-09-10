@@ -6,10 +6,10 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
-			colors: {
-				'rose-bonbon': '#EC4899',
-				'light-coral': '#F87171',
-			},
+      colors: {
+        "rose-bonbon": "#EC4899",
+        "light-coral": "#F87171",
+      },
     },
   },
   plugins: [],
