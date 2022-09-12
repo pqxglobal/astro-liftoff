@@ -1,30 +1,21 @@
 ---
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import Cards from "../components/Cards.astro";
-import Slideshow from '../components/Slideshow.astro';
-import Footer from "../components/Footer.astro";
+import Hero from "../components/index/Hero.astro";
+import Cards from "../components/index/Cards.astro";
+import Slideshow from '../components/index/Slideshow.astro';
+import BaseLayout from '../layouts/BaseLayout.astro'
 import { SITE_TITLE } from '../config';
 
+// NOTE create titles for each page
 const title = SITE_TITLE;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body class="w-screen flex flex-col bg-[#0F172A] bg-blur">
-    <Header />
+<BaseLayout title={title}>
+  <div class='bg-blur'>
     <Hero />
     <Cards />
-		<Slideshow />
-    <Footer />
-  </body>
-</html>
+  </div>
+  <Slideshow />
+</BaseLayout>
 
 <style>
   .bg-blur {
