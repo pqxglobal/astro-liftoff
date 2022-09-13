@@ -1,15 +1,16 @@
 ---
 import Hero from "../components/index/Hero.astro";
 import Cards from "../components/index/Cards.astro";
-import Slideshow from '../components/index/Slideshow.astro';
-import BaseLayout from '../layouts/BaseLayout.astro'
-import { SITE_TITLE } from '../config';
+import Slideshow from "../components/index/Slideshow.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../config";
 
-const title = SITE_TITLE + ' - Homepage';
+const title = SITE_TITLE + " - Homepage";
 ---
 
+<!-- NOTE replace colors with global variables --><!-- NOTE think about other possible improvements -->
 <BaseLayout title={title}>
-  <div class='bg-blur'>
+  <div class="bg-blur">
     <Hero />
     <Cards />
   </div>
@@ -18,6 +19,6 @@ const title = SITE_TITLE + ' - Homepage';
 
 <style>
   .bg-blur {
-    background-image: url('images/blur.png');
+    background-image: url("images/blur.png");
   }
 </style>

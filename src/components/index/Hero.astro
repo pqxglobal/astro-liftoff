@@ -1,30 +1,36 @@
 ---
-import ButtonContact from '../ButtonContact.astro'
+import ButtonContact from "../ButtonContact.astro";
 ---
 
-
-<div class="flex flex-col w-7/12 mx-auto gap-[50px]">
-  <div class="flex flex-col mx-auto gap-[50px]">
-    <h1
-      class="font-inter font-medium xl:text-[4.5rem] 2xl:text-[5.5rem] text-[#E0E7FF] mx-auto"
-    >
-      Your Kind of Designer
-    </h1>
-    <div class="flex flex-row items-start w-10/12 py-0 px-10 mx-auto">
-      <p
-        class="flex items-center text-center xl:text-[1.5rem] 2xl:text-[1.7rem] text-[#ACB3CA]"
+<section>
+  <div class="flex flex-col w-7/12 mx-auto gap-[50px]">
+    <div class="flex flex-col mx-auto gap-[50px]">
+      <h1
+        class="font-inter font-medium xl:text-[4.5rem] 2xl:text-[5.5rem] text-[#E0E7FF] mx-auto"
       >
-        Vitae maecenas risus, facilisis orci massa ultricies id mattis interdum
-        fermentum quis cras nunc nunc aliquam luctus amet pellentesque dui
-      </p>
-    </div>
+        Your Kind of Designer
+      </h1>
+      <div class="flex flex-row items-start w-10/12 py-0 px-10 mx-auto">
+        <article>
+          <p
+            class="flex items-center text-center xl:text-[1.5rem] 2xl:text-[1.7rem] text-[#ACB3CA]"
+          >
+            Vitae maecenas risus, facilisis orci massa ultricies id mattis
+            interdum fermentum quis cras nunc nunc aliquam luctus amet
+            pellentesque dui
+          </p>
+        </article>
+      </div>
       <ButtonContact />
-  </div>
+    </div>
     <div class="flex flex-row justify-center items-center mt-10">
-      <img
-        src="../images/programmer.svg"
-        alt="programmer"
-        class="w-[489px] h-[489px]"
-      />
+      <figure>
+        <img
+          src="/images/programmer.svg"
+          alt="programmer"
+          class="w-[489px] h-[489px]"
+        />
+      </figure>
     </div>
   </div>
+</section>

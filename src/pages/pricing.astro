@@ -1,70 +1,248 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import { SITE_TITLE } from '../config';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../config";
 
-const title = SITE_TITLE + ' - Pricing';
+const title = SITE_TITLE + " - Pricing";
 ---
 
 <BaseLayout title={title}>
   <div class="flex flex-col items-center p-0 gap-[91px] mt-[50px]">
     <div>
-      <h2 class="text-[#E0E7FF] font-inter font-bold text-[69px]">A PRICE FOR EVERYONE</h2>
-      <p class="text-[#E0E7FF] font-inter text-[22px] text-center">Three tiers to meet your needs.</p>
+      <h2 class="text-[#E0E7FF] font-inter font-bold text-[69px]">
+        A PRICE FOR EVERYONE
+      </h2>
+      <p class="text-[#E0E7FF] font-inter text-[22px] text-center">
+        Three tiers to meet your needs.
+      </p>
     </div>
-    <h3 class="text-[#FAFBFF] font-inter text-[12px] bg-[#EC4899] py-[2px] px-[10px] rounded-full text-center w-[119px] mx-auto mb-[-105px] z-10">MOST POPULAR</h3>
+    <h3
+      class="text-[#FAFBFF] font-inter text-[12px] bg-rose-bonbon py-[2px] px-[10px] rounded-full text-center w-[119px] mx-auto mb-[-105px] z-10"
+    >
+      MOST POPULAR
+    </h3>
     <div class="flex flex-row items-center mb-5">
       <!-- pricing 1 -->
-      <div class="flex flex-col gap-[27px] border border-[#ACB3CA] py-[30px] px-[25px] w-[400px] h-[538px]">
-        <h2 class="text-[#E0E7FF] font-inter text-[52px] font-bold mx-auto">$1000</h2>
-        <h3 class="text-[#0F172A] font-inter text-[12px] bg-[#ACB3CA] py-[2px] px-[10px] rounded-full text-center w-[112px] mx-auto">STARTER PLAN</h3>
-        <p class="text-[#8D98CD] font-inter text-[18px] text-center flex flex-col w-[350px]">Landing page to maximize conversion rate</p>
+      <div
+        class="flex flex-col gap-[27px] border border-[#ACB3CA] py-[30px] px-[25px] w-[400px] h-[538px]"
+      >
+        <h2 class="text-[#E0E7FF] font-inter text-[52px] font-bold mx-auto">
+          $1000
+        </h2>
+        <h3
+          class="text-[#0F172A] font-inter text-[12px] bg-[#ACB3CA] py-[2px] px-[10px] rounded-full text-center w-[112px] mx-auto"
+        >
+          STARTER PLAN
+        </h3>
+        <p
+          class="text-[#8D98CD] font-inter text-[18px] text-center flex flex-col w-[350px]"
+        >
+          Landing page to maximize conversion rate
+        </p>
         <div class="mx-auto">
           <ul>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Custom Branding</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Single Landing Page</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />SEO Optimized</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />One Email Inbox</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />One Email Inbox</li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Custom Branding
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Single Landing Page
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />SEO Optimized
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />One Email Inbox
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />One Email Inbox
+            </li>
           </ul>
         </div>
-        <button class="bg-[#ACB3CA] py-[10px] px-[35px] w-[210px] mx-auto rounded text-[22px] text-[#FAFBFF] font-inter text-center"><a href="/starterplan">Learn More</a></button>
-        <p class="text-[#8D98CD] font-inter text-[18px] text-center">$500 up front + $500 upon completion</p>
+        <button
+          class="bg-[#ACB3CA] py-[10px] px-[35px] w-[210px] mx-auto rounded text-[22px] text-[#FAFBFF] font-inter text-center"
+          ><a href="/starterplan">Learn More</a>
+        </button>
+        <p class="text-[#8D98CD] font-inter text-[18px] text-center">
+          $500 up front + $500 upon completion
+        </p>
       </div>
       <!-- pricing 2 -->
-      <div class="flex flex-col gap-[27px] border-[5px] border-[#EC4899] py-[60px] px-[25px] w-[400px] h-[605px]">
-        <h2 class="text-[#E0E7FF] font-inter text-[52px] font-bold mx-auto">$1400</h2>
-        <h3 class="text-[#0F172A] font-inter text-[12px] bg-[#ACB3CA] py-[2px] px-[10px] rounded-full text-center w-[112px] mx-auto">PRO PLAN</h3>
-        <p class="text-[#8D98CD] font-inter text-[18px] text-center flex flex-col w-[350px]">Landing page to maximize conversion rate</p>
+      <div
+        class="flex flex-col gap-[27px] border-[5px] border-rose-bonbon py-[60px] px-[25px] w-[400px] h-[605px]"
+      >
+        <h2 class="text-[#E0E7FF] font-inter text-[52px] font-bold mx-auto">
+          $1400
+        </h2>
+        <h3
+          class="text-[#0F172A] font-inter text-[12px] bg-[#ACB3CA] py-[2px] px-[10px] rounded-full text-center w-[112px] mx-auto"
+        >
+          PRO PLAN
+        </h3>
+        <p
+          class="text-[#8D98CD] font-inter text-[18px] text-center flex flex-col w-[350px]"
+        >
+          Landing page to maximize conversion rate
+        </p>
         <div class="mx-auto">
           <ul>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Starter Plan +</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Up to 5 pages</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Social feed integrations</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />CMS for custom content</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />custom analytics</li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Starter Plan +
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Up to 5 pages
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Social feed integrations
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />CMS for custom content
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />custom analytics
+            </li>
           </ul>
         </div>
-        <button class="bg-[#ACB3CA] py-[10px] px-[35px] w-[210px] mx-auto rounded text-[22px] text-[#FAFBFF] font-inter text-center"><a href="/proplan">Learn More</a></button>
-        <p class="text-[#8D98CD] font-inter text-[18px] text-center">$700 up front + $700 upon completion</p>
+        <button
+          class="bg-[#ACB3CA] py-[10px] px-[35px] w-[210px] mx-auto rounded text-[22px] text-[#FAFBFF] font-inter text-center"
+          ><a href="/proplan">Learn More</a>
+        </button>
+        <p class="text-[#8D98CD] font-inter text-[18px] text-center">
+          $700 up front + $700 upon completion
+        </p>
       </div>
       <!-- pricing 3 -->
-      <div class="flex flex-col gap-[27px] border border-[#ACB3CA] py-[30px] px-[25px] w-[400px] h-[538px]">
-        <h2 class="text-[#E0E7FF] font-inter text-[52px] font-bold mx-auto">$2000</h2>
-        <h3 class="text-[#0F172A] font-inter text-[12px] bg-[#ACB3CA] py-[2px] px-[10px] rounded-full text-center w-[112px] mx-auto">WRITERS PLAN</h3>
-        <p class="text-[#8D98CD] font-inter text-[18px] text-center flex flex-col w-[350px]">Landing page to maximize conversion rate</p>
+      <div
+        class="flex flex-col gap-[27px] border border-[#ACB3CA] py-[30px] px-[25px] w-[400px] h-[538px]"
+      >
+        <h2 class="text-[#E0E7FF] font-inter text-[52px] font-bold mx-auto">
+          $2000
+        </h2>
+        <h3
+          class="text-[#0F172A] font-inter text-[12px] bg-[#ACB3CA] py-[2px] px-[10px] rounded-full text-center w-[112px] mx-auto"
+        >
+          WRITERS PLAN
+        </h3>
+        <p
+          class="text-[#8D98CD] font-inter text-[18px] text-center flex flex-col w-[350px]"
+        >
+          Landing page to maximize conversion rate
+        </p>
         <div class="mx-auto">
           <ul>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Pro Plan +</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Full-featured blog</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Search functionality</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Two Email Inboxes</li>
-            <li class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"><img src="../images/check-circle.png" alt="check-circle" class="w-[24px] h-[24px]" />Free domain name (1 year)</li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Pro Plan +
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Full-featured blog
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Search functionality
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Two Email Inboxes
+            </li>
+            <li
+              class="flex flex-row gap-[20px] text-[#E0E7FF] font-inter text-[16px]"
+            >
+              <img
+                src="../images/check-circle.png"
+                alt="check-circle"
+                class="w-[24px] h-[24px]"
+              />Free domain name (1 year)
+            </li>
           </ul>
         </div>
-        <button class="bg-[#ACB3CA] py-[10px] px-[35px] w-[210px] mx-auto rounded text-[22px] text-[#FAFBFF] font-inter text-center"><a href="/writersplan">Learn More</a></button>
-        <p class="text-[#8D98CD] font-inter text-[18px] text-center">$1000 up front + $1000 upon completion</p>
+        <button
+          class="bg-[#ACB3CA] py-[10px] px-[35px] w-[210px] mx-auto rounded text-[22px] text-[#FAFBFF] font-inter text-center"
+          ><a href="/writersplan">Learn More</a>
+        </button>
+        <p class="text-[#8D98CD] font-inter text-[18px] text-center">
+          $1000 up front + $1000 upon completion
+        </p>
       </div>
-
     </div>
   </div>
 </BaseLayout>
