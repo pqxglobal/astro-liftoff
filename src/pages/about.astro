@@ -1,10 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import ButtonContact from '../components/ButtonContact.astro'
 import { SITE_TITLE } from '../config';
 
 const title = SITE_TITLE + ' - About';
 ---
 
 <BaseLayout title={title}>
-  <!-- NOTE create content -->
+  <div class="flex flex-col justify-center items-center gap-[57px] mt-10">
+    <h2 class="text-[#E0E7FF] font-inter text-[52px]">Happy Clients</h2>
+    <div class="flex flex-row gap-[25px] w-[718px] mx-auto">
+      <div class="flex w-[96px] h-[96px]"><img src="/logos/fiat.svg" alt="fiat logo"></div>
+      <div class="flex w-[96px] h-[96px]"><img src="/logos/siemens.svg" alt="siemens logo"></div>
+      <div class="flex w-[96px] h-[96px]"><img src="/logos/hitachi.svg" alt="hitachi logo"></div>
+      <div class="flex w-[96px] h-[96px]"><img src="/logos/rollsroyce.svg" alt="rollsroyce logo"></div>
+      <div class="flex w-[96px] h-[96px]"><img src="/logos/asus.svg" alt="asus logo"></div>
+      <div class="flex w-[96px] h-[96px]"><img src="/logos/bentley.svg" alt="bentley logo"></div>
+    </div>
+  </div>
+
+  <div class="flex flex-col justify-center items-center gap-[50px] w-[744px] mx-auto my-[111px]">
+    <h1 class="text-[#E0E7FF] font-inter text-[69px]">Let Us Tell Your Story</h1>
+    <p class="text-[#ACB3CA] font-inter text-[35px] text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore provident fugiat eaque ducimus, accusamus quis temporibus nesciunt esse? Provident?</p>
+    <ButtonContact />
+  </div>
+
 </BaseLayout>
